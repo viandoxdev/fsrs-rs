@@ -15,20 +15,18 @@ description = "FSRS for Rust, including Optimizer and Scheduler"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies.burn]
-# version = "0.13.0"
-# git = "https://github.com/burn-rs/burn.git"
-# rev = "d2639682367f39d0d0ed049d0cf3a2077259e05d"
-path = "../burn/crates/burn"
+version = "0.16.0"
+git = "https://github.com/open-spaced-repetition/burn.git"
+rev = "952efa098fe86cdaa571a04e7bc9c4fe748aaba4"
 default-features = false
-features = ["std", "train", "ndarray", "autodiff", "browser"]
+features = ["std", "train", "autodiff", "browser", "ndarray"]
 
 [dev-dependencies.burn]
-# version = "0.13.0"
-# git = "https://github.com/burn-rs/burn.git"
-# rev = "d2639682367f39d0d0ed049d0cf3a2077259e05d"
-path = "../burn/crates/burn"
+version = "0.16.0"
+git = "https://github.com/open-spaced-repetition/burn.git"
+rev = "952efa098fe86cdaa571a04e7bc9c4fe748aaba4"
 default-features = false
-features = ["std", "train", "ndarray", "sqlite-bundled", "metrics"]
+features = ["std", "train", "autodiff", "browser", "ndarray"]
 
 [dependencies]
 itertools = "0.12.0"
